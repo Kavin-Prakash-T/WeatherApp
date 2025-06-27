@@ -3,7 +3,22 @@
 *{
     font-family:"poppins", sans-serif;
 }
-
+header img{
+    width: 50px;
+    height: 50px;
+   border-radius: 50%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: 500;
+    color: azure;
+    margin-right: 25px;
+}
 body{
     margin:0;
     padding:0;
@@ -25,7 +40,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
     overflow: hidden;
 }
@@ -79,4 +94,49 @@ body{
     font-size: 18px;
     padding-top: 0;
     color: rgb(255, 255, 255);
+}
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(188, 191, 191);
+}
+.cord div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+.cord div .num{
+   font-weight: 400;
+   padding: 5px;
+   color: yellow;
+}
+.data-container .element .icon {
+    width:40px;
+    height:40px;
+}
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.data .wind-percent,.humidity-percent {
+    color: yellow;
+}
+.data .text {
+    color: rgb(188, 191, 191);
+}
+.footer{
+    color: rgb(188, 191, 191);
+    text-align: center;
+    margin-top: 20px;
 }
