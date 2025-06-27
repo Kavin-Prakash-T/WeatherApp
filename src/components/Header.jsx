@@ -3,10 +3,10 @@ import "../App.css";
 function Header() {
   return (
     <>
-    <header>
+      <header>
         <img src={logo} alt="logo" />
-         <div>Weather App</div>
-    </header>
+        <div>Weather App</div>
+      </header>
     </>
   )
 }

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    font-family:"poppins", sans-serif;
+* {
+    font-family: "poppins", sans-serif;
 }
-header img{
+
+header img {
     width: 50px;
     height: 50px;
-   border-radius: 50%;
+    border-radius: 50%;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,24 +21,27 @@ header{
     color: azure;
     margin-right: 25px;
 }
-body{
-    margin:0;
-    padding:0;
+
+body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(255, 255, 255);
-    width:100vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 10px;
 }
-.container{
+
+.container {
     width: 320px;
     padding: 20px;
-    background-image: linear-gradient(45deg,#2f4680,#500ae4);
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.input-container{
+
+.input-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,16 +49,18 @@ body{
     justify-content: center;
     overflow: hidden;
 }
-.search-icon img{
-    height:30px;
-    width:30px;
-    background-color:azure;
+
+.search-icon img {
+    height: 30px;
+    width: 30px;
+    background-color: azure;
     border-radius: 50%;
     padding: 6px;
     cursor: pointer;
     margin-top: 5px;
 }
-.cityInput{
+
+.cityInput {
     width: 230px;
     height: 40px;
     padding: 0 10px;
@@ -64,47 +71,57 @@ body{
     color: #333;
     background-color: azure;
 }
-.image img{
+
+.image img {
     width: 125px;
     height: 125px;
 }
-.image{
+
+.image {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-.temp,.location,.country{
+
+.temp,
+.location,
+.country {
     color: azure;
     text-align: center;
     padding-top: 5px;
     text-transform: uppercase;
 }
-.temp{
+
+.temp {
     font-weight: 500;
     font-size: 28px;
 }
-.location{
+
+.location {
     font-weight: 400;
     font-size: 22px;
     padding-top: 0;
     color: yellow;
 }
-.country{
+
+.country {
     font-weight: 400;
     font-size: 18px;
     padding-top: 0;
     color: rgb(255, 255, 255);
 }
-.cord{
+
+.cord {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     margin-top: 10px;
     text-align: center;
     color: rgb(188, 191, 191);
 }
-.cord div{
+
+.cord div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,15 +129,18 @@ body{
     font-weight: 500;
     padding: 10px;
 }
-.cord div .num{
-   font-weight: 400;
-   padding: 5px;
-   color: yellow;
+
+.cord div .num {
+    font-weight: 400;
+    padding: 5px;
+    color: yellow;
 }
+
 .data-container .element .icon {
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
 }
+
 .data-container {
     display: flex;
     justify-content: space-between;
@@ -129,14 +149,35 @@ body{
     text-align: center;
     padding: 5px;
 }
-.data .wind-percent,.humidity-percent {
+
+.data .wind-percent,
+.humidity-percent {
     color: yellow;
 }
+
 .data .text {
     color: rgb(188, 191, 191);
 }
-.footer{
+
+.footer {
     color: rgb(188, 191, 191);
     text-align: center;
     margin-top: 20px;
+}
+
+.citynotfound,
+.error-message {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.loading-message {
+    text-align: center;
+    color: rgb(0, 255, 140);
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }

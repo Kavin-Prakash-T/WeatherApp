@@ -1,8 +1,23 @@
-import humidityIcon from '../assets/humidity.png';
-import windIcon from '../assets/wind.png';
-const WeatherDetails = ({ icon, temp, city,country,lat,log,humidity,wind }) => {
+import humidityIcon from "../assets/humidity.png";
+import windIcon from "../assets/wind.png";
+const WeatherDetails = ({
+  icon,
+  temp,
+  city,
+  country,
+  lat,
+  log,
+  humidity,
+  wind,
+  loading,
+  error,
+  cityNotFound,
+}) => {
   return (
     <>
+      {loading && <div className="loading-message">Loading...</div>}
+      {error && <div className="error-message">{error}</div>}
+      {cityNotFound && <div className="citynotfound">City Not Found!</div>}
       <div className="image">
         <img src={icon} alt="Image" />
       </div>
@@ -11,24 +26,24 @@ const WeatherDetails = ({ icon, temp, city,country,lat,log,humidity,wind }) => {
       <div className="country">{country}</div>
       <div className="cord">
         <div>
-            <span className="lat">Latitude</span>
-            <span className='num'>{lat}</span>
+          <span className="lat">Latitude</span>
+          <span className="num">{lat}</span>
         </div>
-         <div>
-            <span className="log">Longitude</span>
-            <span className='num'>{log}</span>
+        <div>
+          <span className="log">Longitude</span>
+          <span className="num">{log}</span>
         </div>
       </div>
       <div className="data-container">
         <div className="element">
-          <img src={humidityIcon} alt="humidity" className='icon'/>
+          <img src={humidityIcon} alt="humidity" className="icon" />
           <div className="data">
             <div className="humidity-percent">{humidity}%</div>
             <div className="text">Humidity</div>
           </div>
         </div>
-         <div className="element">
-          <img src={windIcon} alt="wind" className='icon'/>
+        <div className="element">
+          <img src={windIcon} alt="wind" className="icon" />
           <div className="data">
             <div className="wind-percent">{wind} km/h</div>
             <div className="text">Wind Speed</div>
@@ -36,7 +51,7 @@ const WeatherDetails = ({ icon, temp, city,country,lat,log,humidity,wind }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default WeatherDetails
+export default WeatherDetails;
