@@ -15,9 +15,6 @@ const WeatherDetails = ({
 }) => {
   return (
     <>
-      {loading && <div className="loading-message">Loading...</div>}
-      {error && <div className="error-message">{error}</div>}
-      {cityNotFound && <div className="citynotfound">City Not Found!</div>}
       <div className="image">
         <img src={icon} alt="Image" />
       </div>

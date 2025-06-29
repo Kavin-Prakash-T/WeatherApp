@@ -102,7 +102,10 @@ function App() {
             <img src={searchIcon} alt="search" />
           </div>
         </div>
-        <WeatherDetails icon={icon} temp={temp} city={city} country={country} lat={lat} log={log} humidity={humidity} wind={wind} loading={loading} cityNotFound={cityNotFound} error={error} />
+        {loading && <div className="loading-message">Loading...</div>}
+        {error && <div className="error-message">{error}</div>}
+        {cityNotFound && <div className="citynotfound">City Not Found!</div>}
+        {!loading && !cityNotFound && <WeatherDetails icon={icon} temp={temp} city={city} country={country} lat={lat} log={log} humidity={humidity} wind={wind} loading={loading} cityNotFound={cityNotFound} error={error} />}
         <Footer />
       </div>
     </>
